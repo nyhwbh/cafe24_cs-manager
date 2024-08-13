@@ -1,35 +1,7 @@
-<!-- <html>
+<html>
    <body>
       - 앱실행 완료 -
-      <p> <a href="{https://nyhwbh.github.io/cafe24_cs-manager/redirect}"> API 자격증명 얻기</a> </p>
+      <p> <a href="redirect"> API 자격증명 얻기</a> </p>
       <p> <a href="{https://(URL no.4) }">API 호출 하기</a> </p>
    </body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈 화면</title>
-</head>
-<body>
-    <h1>홈 화면</h1>
-    <p>아래 버튼을 클릭하면 동적으로 생성된 인증 코드로 인증 코드 페이지로 이동합니다.</p>
-    
-    <!-- 버튼을 클릭할 때 인증 코드가 생성되어 redirect 페이지로 이동 -->
-    <button onclick="redirectToPage()">인증 코드 페이지로 이동하기</button>
-
-    <script>
-        function redirectToPage() {
-            // 인증 코드를 동적으로 생성합니다 (예: 랜덤 문자열)
-            const code = Math.random().toString(36).substr(2, 8); // 랜덤 8자리 코드
-
-            // 인증 코드가 포함된 URL을 생성합니다
-            const redirectUrl = `redirect?code=${code}`;
-            
-            // 페이지를 redirectUrl로 이동시킵니다
-            window.location.href = redirectUrl;
-        }
-    </script>
-</body>
 </html>
